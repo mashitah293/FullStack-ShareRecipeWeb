@@ -1,0 +1,62 @@
+/* Logo */
+.NavBar #logo {
+  height: 80px;
+  width: 90px;
+  border-radius: 50px;
+  margin-left: 50px;
+}
+
+/* Navbar background */
+.NavBar .navbar {
+  background-color: #886644;
+}
+
+/* Navbar links */
+.NavBar .nav-link {
+  color: white !important; /* Ensure the text color is white */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  font-size: 25px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar links hover state */
+.NavBar .nav-link:hover {
+  color: #491708 !important; /* Change to a brown color on hover */
+}
+
+/* Button styles */
+.NavBar .navbtn {
+  margin-right: 10px;
+  background-color: #491708 !important; /* Force the background color */
+  color: white !important; /* Force the text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Capsule shape */
+  padding: 8px 16px; /* Adjust padding for better shape */
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Ensure consistent button styles for .btn-outline-light class */
+.NavBar .btn-outline-light {
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove any box-shadow */
+}
+
+/* Hover effect for buttons */
+.NavBar .navbtn:hover {
+  background-color: #886644 !important; /* Change background color on hover */
+  color: white !important; /* Ensure text color remains white */
+}
+
+/* Optional: Adjust spacing between icon and text */
+.NavBar .navbtn svg {
+  margin-right: 5px; /* Space between icon and text */
+}
+/* Container alignment */
+.NavBar .container {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}

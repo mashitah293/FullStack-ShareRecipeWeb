@@ -1,0 +1,74 @@
+.category-container {
+  display: flex;
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  background-color: #e0c7a5; /* Set sidebar background color */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.side-nav button {
+  background-color:  #a2866b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.side-nav button:hover {
+  background-color: #aa7e55;
+}
+
+.category-content {
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100%;
+  padding-right: 20px;
+}
+
+.card {
+  height: 500px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #845c36;
+  border-color:#aa7e55;
+  align-self: center; /* Center the button horizontally */
+  margin-top: auto;
+  margin-bottom: 10%; 
+  margin-left: 25%;/* Ensure it's at the bottom */
+  display: block;
+  text-align: center;
+  width: 50%; /* Optional: Make button full width */
+}
+.btn-primary:hover {
+  background-color: #aa7e55;
+}

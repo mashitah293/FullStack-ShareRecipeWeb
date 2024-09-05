@@ -1,0 +1,250 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+.NavBar {
+    background-color: #886644;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 90px;
+    border-radius: 50px;
+    margin-left: 100px;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #491708 !important;
+}
+
+.btn {
+    margin-right: 10px;
+    background-color: #491708 !important;
+    color: white !important;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #886644 !important;
+    color: white !important;
+}
+
+.container {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+/* SubRec Component (Recipe Submission Form) */
+.subrec-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #e0c7a5;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Category Component */
+.category-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.side-nav {
+    width: 250px;
+    background-color: #BEA286;
+    padding: 20px;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin: 15px 0;
+}
+
+.side-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-family: cursive;
+}
+
+.side-nav ul li a:hover {
+    background-color: #886644;
+}
+
+.category-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f1f8e9;
+    border-left: 2px solid #886644;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.category-content h1 {
+    margin-bottom: 20px;
+    color: #886644;
+}
+
+.category-content p {
+    color: black;
+    font-size: 1.2em;
+}
+
+.category-content .card {
+    margin: 20px 0;
+    border: 1px solid #886644;
+    width: 300px;
+}
+
+.card-body {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    color: #491708;
+}
+
+.card-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #491708;
+    border-color: #491708;
+}
+
+.btn-primary:hover {
+    background-color: #886644;
+    border-color: #886644;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .category-container {
+        flex-direction: column;
+    }
+
+    .side-nav {
+        width: 100%;
+    }
+
+    .category-content {
+        height: auto;
+    }
+}

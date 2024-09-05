@@ -1,0 +1,33 @@
+.custom-btn {
+    background-color: #f8b042;
+    color: white;
+    width: 100%;
+}
+
+.custom-btn:hover {
+    background-color: #e09a36;
+    color: white;
+}
+
+.text {
+    color: rgb(26, 107, 238);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text:hover {
+    transition-duration: 0.3s;
+    color: #f8b042;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.c-text-center {
+    font-size: 50px;
+}
+
